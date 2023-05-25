@@ -1,10 +1,29 @@
 {
   "version": 2,
-  "dgSpecHash": "A5H+xECB3o+ehsWl17VSkAhsPZj8Fj95qz6AOUDy7LcNPNIUjMU60WRDbBYRYT+6PQM8wrSOWmgM4R2H+B2S5A==",
+  "dgSpecHash": "d0pagyuMNQNRv76PUjdJfRuuZtE7Vir2ZI8/3wd7mUUrZmTzwH5KzINeZMSQo+S9EpOeBtKEJ+6OAhDYh9mpRg==",
   "success": true,
   "projectFilePath": "/Users/brianmacpherson/Development/ddd/BuberDinner/BuberDinner.Api/BuberDinner.Api.csproj",
   "expectedPackageFiles": [
-    "/Users/brianmacpherson/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/7.0.0/microsoft.extensions.dependencyinjection.abstractions.7.0.0.nupkg.sha512"
+    "/Users/brianmacpherson/.nuget/packages/microsoft.csharp/4.5.0/microsoft.csharp.4.5.0.nupkg.sha512",
+    "/Users/brianmacpherson/.nuget/packages/microsoft.extensions.configuration/7.0.0/microsoft.extensions.configuration.7.0.0.nupkg.sha512",
+    "/Users/brianmacpherson/.nuget/packages/microsoft.extensions.configuration.abstractions/7.0.0/microsoft.extensions.configuration.abstractions.7.0.0.nupkg.sha512",
+    "/Users/brianmacpherson/.nuget/packages/microsoft.extensions.configuration.binder/7.0.0/microsoft.extensions.configuration.binder.7.0.0.nupkg.sha512",
+    "/Users/brianmacpherson/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/7.0.0/microsoft.extensions.dependencyinjection.abstractions.7.0.0.nupkg.sha512",
+    "/Users/brianmacpherson/.nuget/packages/microsoft.extensions.options/7.0.0/microsoft.extensions.options.7.0.0.nupkg.sha512",
+    "/Users/brianmacpherson/.nuget/packages/microsoft.extensions.options.configurationextensions/7.0.0/microsoft.extensions.options.configurationextensions.7.0.0.nupkg.sha512",
+    "/Users/brianmacpherson/.nuget/packages/microsoft.extensions.primitives/7.0.0/microsoft.extensions.primitives.7.0.0.nupkg.sha512",
+    "/Users/brianmacpherson/.nuget/packages/microsoft.identitymodel.abstractions/6.30.1/microsoft.identitymodel.abstractions.6.30.1.nupkg.sha512",
+    "/Users/brianmacpherson/.nuget/packages/microsoft.identitymodel.jsonwebtokens/6.30.1/microsoft.identitymodel.jsonwebtokens.6.30.1.nupkg.sha512",
+    "/Users/brianmacpherson/.nuget/packages/microsoft.identitymodel.logging/6.30.1/microsoft.identitymodel.logging.6.30.1.nupkg.sha512",
+    "/Users/brianmacpherson/.nuget/packages/microsoft.identitymodel.tokens/6.30.1/microsoft.identitymodel.tokens.6.30.1.nupkg.sha512",
+    "/Users/brianmacpherson/.nuget/packages/microsoft.netcore.platforms/1.1.0/microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "/Users/brianmacpherson/.nuget/packages/microsoft.netcore.targets/1.1.0/microsoft.netcore.targets.1.1.0.nupkg.sha512",
+    "/Users/brianmacpherson/.nuget/packages/system.identitymodel.tokens.jwt/6.30.1/system.identitymodel.tokens.jwt.6.30.1.nupkg.sha512",
+    "/Users/brianmacpherson/.nuget/packages/system.runtime/4.3.0/system.runtime.4.3.0.nupkg.sha512",
+    "/Users/brianmacpherson/.nuget/packages/system.security.cryptography.cng/4.5.0/system.security.cryptography.cng.4.5.0.nupkg.sha512",
+    "/Users/brianmacpherson/.nuget/packages/system.text.encoding/4.3.0/system.text.encoding.4.3.0.nupkg.sha512",
+    "/Users/brianmacpherson/.nuget/packages/system.text.encodings.web/4.7.2/system.text.encodings.web.4.7.2.nupkg.sha512",
+    "/Users/brianmacpherson/.nuget/packages/system.text.json/4.7.2/system.text.json.4.7.2.nupkg.sha512"
   ],
   "logs": []
 }
