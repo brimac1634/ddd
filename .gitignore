@@ -1,0 +1,33 @@
+# Build output
+bin/
+obj/
+
+# NuGet packages
+packages/
+
+# User-specific settings
+*.suo
+*.user
+
+# Build results
+[Dd]ebug/
+[Rr]elease/
+
+# .NET Core
+*.runtimeconfig.json
+*.deps.json
+
+# Visual Studio specific
+*.csproj.user
+
+# Rider
+.idea/
+
+# VSCode
+.vscode/
+.vs
+
+# .NET Fiddler Certificate generator
+.fiddler/
+
+/data
