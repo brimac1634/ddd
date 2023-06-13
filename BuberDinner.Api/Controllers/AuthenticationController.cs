@@ -3,6 +3,7 @@ using BuberDinner.Application.Authentication.Common;
 using BuberDinner.Application.Authentication.Queries.Login;
 using BuberDinner.Contracts.Authentication;
 using ErrorOr;
+using MapsterMapper;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 
@@ -12,10 +13,12 @@ namespace BuberDinner.Api.Controllers;
 public class AuthenticationController : ApiController
 {
     private readonly ISender _mediator;
+    private readonly IMapper _mapper;
 
-    public AuthenticationController(ISender mediator)
+    public AuthenticationController(ISender mediator, IMapper mapper)
     {
         _mediator = mediator;
+        _mapper = mapper;
     }
 
     private static AuthenticationResponse MapAuthResult(AuthenticationResult authResult)
@@ -31,30 +34,24 @@ public class AuthenticationController : ApiController
     [HttpPost("register")]
     public async Task<IActionResult> Register(RegisterRequest request)
     {
-        var command = new RegisterCommand(
-            request.FirstName,
-            request.LastName,
-            request.Email,
-            request.Password);
+        var command = _mapper.Map<RegisterCommand>(request);
 
         ErrorOr<AuthenticationResult> authResult = await _mediator.Send(command);
 
         return authResult.Match(
-            authResult => Ok(MapAuthResult(authResult)),
+            authResult => Ok(_mapper.Map<AuthenticationResponse>(authResult)),
             errors => Problem(errors));
     }
 
     [HttpPost("login")]
     public async Task<IActionResult> Login(LoginRequest request)
     {
-        var query = new LoginQuery(
-            request.Email,
-            request.Password);
+        var query = _mapper.Map<LoginQuery>(request);
             
         ErrorOr<AuthenticationResult> authResult = await _mediator.Send(query);
         
         return authResult.Match(
-            authResult => Ok(MapAuthResult(authResult)),
+            authResult => Ok(_mapper.Map<AuthenticationResponse>(authResult)),
             errors => Problem(errors));
     }
 }

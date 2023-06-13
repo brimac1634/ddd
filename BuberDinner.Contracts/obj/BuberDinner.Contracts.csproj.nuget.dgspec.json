@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/brianmacpherson/Development/ddd/BuberDinner/BuberDinner.Contracts/BuberDinner.Contracts.csproj": {}
+    "/Users/brianmacpherson/Development/ddd/BuberDinner.Contracts/BuberDinner.Contracts.csproj": {}
   },
   "projects": {
-    "/Users/brianmacpherson/Development/ddd/BuberDinner/BuberDinner.Contracts/BuberDinner.Contracts.csproj": {
+    "/Users/brianmacpherson/Development/ddd/BuberDinner.Contracts/BuberDinner.Contracts.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/brianmacpherson/Development/ddd/BuberDinner/BuberDinner.Contracts/BuberDinner.Contracts.csproj",
+        "projectUniqueName": "/Users/brianmacpherson/Development/ddd/BuberDinner.Contracts/BuberDinner.Contracts.csproj",
         "projectName": "BuberDinner.Contracts",
-        "projectPath": "/Users/brianmacpherson/Development/ddd/BuberDinner/BuberDinner.Contracts/BuberDinner.Contracts.csproj",
+        "projectPath": "/Users/brianmacpherson/Development/ddd/BuberDinner.Contracts/BuberDinner.Contracts.csproj",
         "packagesPath": "/Users/brianmacpherson/.nuget/packages/",
-        "outputPath": "/Users/brianmacpherson/Development/ddd/BuberDinner/BuberDinner.Contracts/obj/",
+        "outputPath": "/Users/brianmacpherson/Development/ddd/BuberDinner.Contracts/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/brianmacpherson/.nuget/NuGet/NuGet.Config"
