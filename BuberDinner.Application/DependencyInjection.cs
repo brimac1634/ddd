@@ -15,9 +15,7 @@ public static class DependencyInjection
     {
         services.AddMediatR(config => config.RegisterServicesFromAssembly(typeof(DependencyInjection).Assembly));
 
-        services.AddScoped<
-            IPipelineBehavior<RegisterCommand, ErrorOr<AuthenticationResult>>, 
-            ValidateRegisterCommandBehavior>();
+        services.AddScoped(typeof(IPipelineBehavior<,>), typeof(ValidationBehavior<,>));
 
         services.AddValidatorsFromAssembly(Assembly.GetExecutingAssembly());
         return services;
