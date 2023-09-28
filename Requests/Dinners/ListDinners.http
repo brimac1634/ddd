@@ -1,0 +1,7 @@
+@host=http://localhost:5198
+@token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyMDYzZGI1My01ZmE0LTQ1OTAtODY3Yy1mOTQ2NDM4NjBmOGIiLCJqdGkiOiJkODhjOTVjOC01NzAxLTQxZjYtYmY3NC00MmRjZjQxMzc4MmIiLCJnaXZlbl9uYW1lIjoiSm9obiIsImZhbWlseV9uYW1lIjoiRG9lIiwiZXhwIjoxNjg3Nzc2MzczLCJpc3MiOiJCdWJlckRpbm5lciIsImF1ZCI6IkJ1YmVyRGlubmVyIn0.U_H54Va5t0cUJqdh73lHXHVPEl8vWsa8BB9qmJD0-RQ
+
+GET {{host}}/dinners
+Authorization: Bearer {{token}}
+
+```
