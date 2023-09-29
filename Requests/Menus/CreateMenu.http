@@ -1,0 +1,26 @@
+@host=http://localhost:5198
+@token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2Y2UyZjMzYy1lMGRhLTQ5M2MtOTMxMy04ZTliZTllZTE2OWUiLCJqdGkiOiI2NGExN2VlNy1mZjkzLTQwNzUtODk3NC0xZjlmOTkzZGFiZmUiLCJnaXZlbl9uYW1lIjoiSm9obiIsImZhbWlseV9uYW1lIjoiRG9lIiwiZXhwIjoxNjk1OTYzNTcwLCJpc3MiOiJCdWJlckRpbm5lciIsImF1ZCI6IkJ1YmVyRGlubmVyIn0.LzntGoweDmA210lBUsUOSrJysENeHeyvdlstX73Y2Pk
+@hostID=sjkefhwe
+
+POST {{host}}/hosts/{{hostId}}/menus
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+{
+    "name": "Yummy Menu",
+    "description": "This is a yummy menu",
+    "sections": [
+        {
+            "id": "0000-000-0000-00000",
+            "name": "Appetizers",
+            "description": "This is a yummy starter",
+            "items": [
+                {
+                    "id": "0000-000-0000-00000",
+                    "name": "Yummy Item",
+                    "description": "This is a yummy item"
+                }
+            ]
+        }
+    ]
+}
