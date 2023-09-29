@@ -1,22 +1,22 @@
 @host=http://localhost:5198
-@token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2Y2UyZjMzYy1lMGRhLTQ5M2MtOTMxMy04ZTliZTllZTE2OWUiLCJqdGkiOiI2NGExN2VlNy1mZjkzLTQwNzUtODk3NC0xZjlmOTkzZGFiZmUiLCJnaXZlbl9uYW1lIjoiSm9obiIsImZhbWlseV9uYW1lIjoiRG9lIiwiZXhwIjoxNjk1OTYzNTcwLCJpc3MiOiJCdWJlckRpbm5lciIsImF1ZCI6IkJ1YmVyRGlubmVyIn0.LzntGoweDmA210lBUsUOSrJysENeHeyvdlstX73Y2Pk
-@hostID=sjkefhwe
+@token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJlYjIxMGE4NS05ZmRkLTRjYzUtYTZmOS1kZDI3NWZiM2FkNjciLCJqdGkiOiJkZDYxZmQ1MS1lMDFlLTRlMGItYjM2ZC02MWYyOGYzMDc5ZDAiLCJnaXZlbl9uYW1lIjoiSm9obiIsImZhbWlseV9uYW1lIjoiRG9lIiwiZXhwIjoxNjk1OTc0NTExLCJpc3MiOiJCdWJlckRpbm5lciIsImF1ZCI6IkJ1YmVyRGlubmVyIn0.nZyjaMbfSYtrb4jyqXxxZW_T9IsjHAJBWFMaFq2Ts48
+@hostId=eb210a85-9fdd-4cc5-a6f9-dd275fb30000
 
 POST {{host}}/hosts/{{hostId}}/menus
 Content-Type: application/json
 Authorization: Bearer {{token}}
 
 {
-    "name": "Yummy Menu",
+    "name": "",
     "description": "This is a yummy menu",
     "sections": [
         {
-            "id": "0000-000-0000-00000",
+            "id": "eb210a85-9fdd-4cc5-a6f9-dd275fb30000",
             "name": "Appetizers",
             "description": "This is a yummy starter",
             "items": [
                 {
-                    "id": "0000-000-0000-00000",
+                    "id": "eb210a85-9fdd-4cc5-a6f9-dd275fb30000",
                     "name": "Yummy Item",
                     "description": "This is a yummy item"
                 }
