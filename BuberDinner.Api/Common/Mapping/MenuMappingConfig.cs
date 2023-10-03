@@ -22,11 +22,11 @@ public class MenuMappingConfig : IRegister
             .Map(dest => dest.HostId, src => src.HostId.Value)
             .Map(dest => dest.DinnerIds, src => src.DinnerIds.Select(id => id.Value))
             .Map(dest => dest.MenuReviewIds, src => src.MenuReviewIds.Select(id => id.Value))
-            .Map(dest => dest.Sections, src => src.MenuSections);
+            .Map(dest => dest.Sections, src => src.Sections);
 
         config.NewConfig<MenuSection, MenuSectionResponse>()
             .Map(dest => dest.Id, src => src.Id.Value)
-            .Map(dest => dest.Items, src => src.MenuItems);
+            .Map(dest => dest.Items, src => src.Items);
         
         config.NewConfig<MenuItem, MenuItemResponse>()
             .Map(dest => dest.Id, src => src.Id.Value);
