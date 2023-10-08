@@ -4,9 +4,10 @@ using BuberDinner.Domain.Common.Models;
 
 namespace BuberDinner.Domain.MenuAggregate.ValueObjects;
 
-public sealed class MenuId : ValueObject
+public sealed class MenuId : AggregateRootId<Guid>
 {
-    public Guid Value { get; }
+    public override Guid Value { get; protected set; }
+
 
     private MenuId(Guid value)
     {
@@ -23,8 +24,12 @@ public sealed class MenuId : ValueObject
         return new(value);
     }
 
+    
     public override IEnumerable<object> GetEqualityComponents()
     {
         yield return Value;
     }
+
+
+
 }

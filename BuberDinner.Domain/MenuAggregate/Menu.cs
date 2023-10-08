@@ -3,12 +3,13 @@ using BuberDinner.Domain.Common.ValueObjects;
 using BuberDinner.Domain.Dinner.ValueObjects;
 using BuberDinner.Domain.Host.ValueObjects;
 using BuberDinner.Domain.MenuAggregate.Entities;
+using BuberDinner.Domain.MenuAggregate.Events;
 using BuberDinner.Domain.MenuAggregate.ValueObjects;
 using BuberDinner.Domain.MenuReview.ValueObjects;
 
 namespace BuberDinner.Domain.MenuAggregate;
 
-public sealed class Menu : AggregateRoot<MenuId>
+public sealed class Menu : AggregateRoot<MenuId, Guid>
 {
     private readonly List<MenuSection> _sections = new();
 
@@ -61,8 +62,12 @@ public sealed class Menu : AggregateRoot<MenuId>
         string description,
         List<MenuSection>? menuSections)
     {
-        return new(MenuId.CreateUnique(), name, description, AverageRating.CreateNew(), hostId, menuSections, DateTime.UtcNow,
+        var menu = new Menu(MenuId.CreateUnique(), name, description, AverageRating.CreateNew(), hostId, menuSections, DateTime.UtcNow,
             DateTime.UtcNow);
+
+        menu.AddDomainEvent(new MenuCreated(menu));
+
+        return menu; 
     }
 
     #pragma warning disable CS8618
