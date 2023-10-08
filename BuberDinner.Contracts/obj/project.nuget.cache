@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Na40VPoDv4KVXNfTTyQkd4MgQWCW1LSzshFY1qiu2jNpO6QxHcDa9CIHuyIZrgjajYiNJn0JKMWtC3V3sOuukQ==",
+  "dgSpecHash": "oYcNOcHU/2ag/zezGwXw+tShcc5FjqJ1tb5/ZXXWCBH6hLJcrOv8qkT9enjxTqRsrp5wHcazddbx5P00wr8LTg==",
   "success": true,
-  "projectFilePath": "/Users/brianmacpherson/Development/ddd/BuberDinner/BuberDinner.Contracts/BuberDinner.Contracts.csproj",
+  "projectFilePath": "/Users/brianmacpherson/Development/ddd/BuberDinner.Contracts/BuberDinner.Contracts.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
