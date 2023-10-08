@@ -1,5 +1,5 @@
 @host=http://localhost:5198
-@token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJlYjIxMGE4NS05ZmRkLTRjYzUtYTZmOS1kZDI3NWZiM2FkNjciLCJqdGkiOiJkZDYxZmQ1MS1lMDFlLTRlMGItYjM2ZC02MWYyOGYzMDc5ZDAiLCJnaXZlbl9uYW1lIjoiSm9obiIsImZhbWlseV9uYW1lIjoiRG9lIiwiZXhwIjoxNjk1OTc0NTExLCJpc3MiOiJCdWJlckRpbm5lciIsImF1ZCI6IkJ1YmVyRGlubmVyIn0.nZyjaMbfSYtrb4jyqXxxZW_T9IsjHAJBWFMaFq2Ts48
+@token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJlMDBjMDllZS1jOGY1LTQ3NjktOWVhYi01N2JkNWFhNmQxM2QiLCJqdGkiOiJmMTQ1YTI2NS01Njk3LTQ4NTQtYmQ2MS03ZDMwNjgyZTlkYjgiLCJnaXZlbl9uYW1lIjoiSm9obiIsImZhbWlseV9uYW1lIjoiRG9lIiwiZXhwIjoxNjk2NzU3MzMxLCJpc3MiOiJCdWJlckRpbm5lciIsImF1ZCI6IkJ1YmVyRGlubmVyIn0.e2kit4JFElEh-BElGC6svkj8r4iOUhV5eCGExOpTsD8
 @hostId=eb210a85-9fdd-4cc5-a6f9-dd275fb30000
 
 POST {{host}}/hosts/{{hostId}}/menus
@@ -7,7 +7,7 @@ Content-Type: application/json
 Authorization: Bearer {{token}}
 
 {
-    "name": "",
+    "name": "Delicious Menu",
     "description": "This is a yummy menu",
     "sections": [
         {
